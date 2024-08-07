@@ -4,7 +4,7 @@
   "private": false,
   "author": "Program Murr",
   "homepage": "https://github.com/programmurr/murr-utils",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "files": [
     "dist"
