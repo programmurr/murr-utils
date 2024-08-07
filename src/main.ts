@@ -1,3 +1,5 @@
-import { murrLog } from "../lib/main";
+const murrLog = () => {
+  console.log("I am Murr");
+};
 
-murrLog();
+export { murrLog };

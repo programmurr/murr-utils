@@ -6,7 +6,9 @@
   "homepage": "https://github.com/programmurr/murr-utils",
   "version": "0.0.0",
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/murr-utils.umd.cjs",
   "module": "./dist/murr-utils.js",
   "exports": {
@@ -22,6 +24,7 @@
   },
   "devDependencies": {
     "typescript": "^5.2.2",
-    "vite": "^5.3.4"
+    "vite": "^5.3.4",
+    "vite-plugin-dts": "^4.0.1"
   }
 }
