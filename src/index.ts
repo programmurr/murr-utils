@@ -1,1 +1,1 @@
-export { murrLog } from "./murrLog";
+export { arrayDelete } from "./arrayDelete";
