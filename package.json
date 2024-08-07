@@ -1,30 +1,11 @@
 {
   "name": "murr-utils",
-  "description": "Some utils for me to use",
-  "private": false,
-  "author": "Program Murr",
-  "homepage": "https://github.com/programmurr/murr-utils",
   "version": "0.0.1",
-  "type": "module",
-  "files": [
-    "dist"
-  ],
-  "main": "./dist/murr-utils.umd.cjs",
-  "module": "./dist/murr-utils.js",
-  "exports": {
-    ".": {
-      "import": "./dist/murr-utils.js",
-      "require": "./dist/murr-utils.umd.cjs"
-    }
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
+  "description": "Some utils for me to use",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["/dist"],
   "devDependencies": {
-    "typescript": "^5.2.2",
-    "vite": "^5.3.4",
-    "vite-plugin-dts": "^4.0.1"
+    "typescript": "^5.2.2"
   }
 }
