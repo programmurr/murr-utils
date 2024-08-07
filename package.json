@@ -1,10 +1,12 @@
 {
   "name": "murr-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Some utils for me to use",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["/dist"],
+  "files": [
+    "/dist"
+  ],
   "devDependencies": {
     "typescript": "^5.2.2"
   }
