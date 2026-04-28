@@ -3,6 +3,7 @@
   "module": "CommonJS",
   "target": "ES2019",
   "declaration": true,
+  "rootDir": "./src",
   "outDir": "./dist"
   },
   "include": ["src"]
