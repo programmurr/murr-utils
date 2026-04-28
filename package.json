@@ -3,10 +3,30 @@
   "version": "0.0.4",
   "description": "Some utils for me to use",
   "homepage": "https://github.com/programmurr/murr-utils",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./arrayDelete": {
+      "types": "./dist/arrayDelete.d.ts",
+      "default": "./dist/arrayDelete.js"
+    },
+    "./arrayRemove": {
+      "types": "./dist/arrayRemove.d.ts",
+      "default": "./dist/arrayRemove.js"
+    },
+    "./memoize": {
+      "types": "./dist/memoize.d.ts",
+      "default": "./dist/memoize.js"
+    }
+  },
+  "sideEffects": false,
   "files": [
-    "/dist"
+    "dist"
   ],
   "devDependencies": {
     "typescript": "6.0.3"

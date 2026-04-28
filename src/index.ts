@@ -1,3 +1,3 @@
-export { arrayDelete } from "./arrayDelete";
-export { arrayRemove } from "./arrayRemove";
-export { memoize } from "./memoize";
+export { arrayDelete } from "./arrayDelete.js";
+export { arrayRemove } from "./arrayRemove.js";
+export { memoize } from "./memoize.js";
