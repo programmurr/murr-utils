@@ -68,6 +68,21 @@ const getChild = <Return>(
   return node.primitive.get(key);
 };
 
+/**
+ * Lets consumers reuse cached results for repeated calls with the same arguments.
+ *
+ * @param fn The function to memoize. Its return value is stored after the first
+ * successful call for a given argument list and reused for later calls with the
+ * same arguments.
+ * @param options Optional cache settings. Provide a `resolver` to derive a
+ * single cache key from the function arguments, and optionally a `cache` map to
+ * supply the backing store used for those resolved keys. When `resolver` is not
+ * provided, memoization uses an internal argument-by-argument cache tree.
+ * @returns A memoized version of `fn` with the same call signature. The
+ * returned function also exposes `clear()`, which removes every cached result,
+ * and `delete(...args)`, which removes the cached result for one specific
+ * argument list and reports whether an entry was removed.
+ */
 export function memoize<Args extends readonly unknown[], Return, Key = never>(
   fn: (...args: Args) => Return,
   options: MemoizeOptions<Args, Key, Return> = {},
